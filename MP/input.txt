@@ -1,0 +1,21 @@
+ADI 04
+MVI C 04
+MOV A B
+MOV A C
+ADD E
+LDA 1032
+Label1
+ADC B
+CALL Label
+PUSH PSW
+CALL Label1
+CALL Label2
+Label
+DAD D
+JMP Label
+INX D
+IN 82
+Label2
+HLT
+ADC B
+LXI B 2050
